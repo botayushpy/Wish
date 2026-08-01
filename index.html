@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Will You Be My Girlfriend? 💕</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating background decorations (shared across pages) -->
+  <div id="bg-decor" class="bg-decor" aria-hidden="true"></div>
+
+  <!-- Music toggle -->
+  <button id="music-btn" class="music-btn" aria-label="Toggle music" title="Toggle music">🎵</button>
+  <audio id="bg-audio" loop preload="none">
+    <source src="assets/song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main id="app">
+
+    <!-- ===================== PAGE 1 ===================== -->
+    <section id="page1" class="page page1 active">
+      <div class="card question-card">
+
+        <div class="critters">
+          <span class="critter teddy">🧸</span>
+          <span class="critter puppy">🐶</span>
+          <span class="critter heart-icon">❤️</span>
+        </div>
+
+        <h1 class="heading hey-heading">Hey You... 💕</h1>
+
+        <p class="sub-message fade-line" id="intro-line">
+          I have a very important question to ask you...
+        </p>
+
+        <h2 class="the-question" id="the-question">
+          Will you be my girlfriend? 🥺❤️
+        </h2>
+
+        <div class="button-row">
+          <button id="yes-btn" class="btn yes-btn">YES ❤️</button>
+          <button id="no-btn" class="btn no-btn">NO 🥺</button>
+        </div>
+
+      </div>
+
+      <!-- confetti / burst layer -->
+      <div id="burst-layer" class="burst-layer" aria-hidden="true"></div>
+    </section>
+
+    <!-- ===================== PAGE 2 ===================== -->
+    <section id="page2" class="page page2">
+      <div class="card wish-card">
+
+        <div class="critters critters-p2">
+          <span class="critter teddy">🧸</span>
+          <span class="critter puppy">🐶</span>
+          <span class="critter flower">🌸</span>
+        </div>
+
+        <h1 class="heading wish-heading">Happy Girlfriend's Day! ❤️</h1>
+
+        <p id="typewriter-text" class="typewriter-text"></p>
+
+        <p class="footer-note">Made with ❤️ just for you</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
